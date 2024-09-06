@@ -1,0 +1,10 @@
+timm
+onnx
+onnxruntime-gpu
+opencv-python-headless=4.7.0.68
+torch=2.0.1
+torchvision=0.15.2
+torchaudio=2.0.2
+matplotlib=3.6.3
+numpy
+setuptools=45.2.0
