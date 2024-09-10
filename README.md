@@ -16,6 +16,11 @@
 * cuda 11.8
 * tensorrt 8.6.1
 
+```shell
+pip install -r requirements.txt
+pip install -e .
+```
+
 *: About tensorrt, you can download it from [NVIDIA TensorRT](https://developer.nvidia.com/nvidia-tensorrt-8x-download), and then you can install it by the following command.
 
 
