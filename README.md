@@ -49,26 +49,26 @@ Next, You can convert `pth` model to `onnx` file for using the corresponding com
 
 *: The workspace is the maximum memory size that `TensorRT` can allocate for building an engine. The larger the workspace, the more memory `TensorRT` can use to optimize the engine, and the faster the inference speed will be. However, the larger the workspace, the more memory will be used, so you need to choose a suitable workspace size according to your own hardware configuration.
 
-- Transform image embedding `pth` model to `onnx` engine
+- Transform image embedding model from `pth` to `onnx`
 
 
 ```bash
 python scripts/export_onnx_embed.py --img_pt2onnx --sam_checkpoint pretrained_checkpoint/sam_hq_vit_b.pth --model_type vit_b
 ```
 
-+ Transform image embedding onnx model to tensorrt engine
++ Transform image embedding model from `onnx` to `tensorrt`
 
 ```shell
 python scripts/export_onnx_embed.py --img_onnx2trt --img_onnx_model_path embedding_onnx/sam_vit_b_embedding.onnx
 ```
 
-- Transform sam pth model to onnx model
+- Transform sam model from `pth` to `onnx`
 
 ```shell
 python scripts/export_onnx_embed.py --prompt_masks_pt2onnx --model_type vit_b --sam_checkpoint pretrained_checkpoint/sam_hq_vit_b.pth
 ```
 
-- Transform sam onnx model to engine model
+- Transform sam model from `onnx` to `engine`
 
 ```shell
 python scripts/export_onnx_embed.py --sam_onnx2trt --sam_onnx_path ./pretrained_checkpoint/sam_hq_vit_b.onnx
